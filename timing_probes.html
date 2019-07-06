@@ -1,0 +1,151 @@
+
+	<html>
+<head>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.css" rel="stylesheet" type="text/css" />
+
+    <style type="text/css">
+    </style>
+</head>
+<body>
+<div id="mynetwork"></div>
+
+<script type="text/javascript">
+    // create an array with nodes
+    var nodes = new vis.DataSet([
+    {id: 1, label: 'ln.joshuajbouw.dev', color: '#b0c0ff'},
+{id: 2, label: 'eclips.lnd', color: '#b0c0ff'},
+{id: 3, label: 'LIGHTNING-CASINO.COM', color: '#b0c0ff'},
+{id: 4, label: 'seth586😈guides', color: '#b0c0ff'},
+{id: 5, label: 'LNBIG.com [lnd-02]', color: '#b0c0ff'},
+{id: 6, label: '***ROUTE 66***', color: '#b0c0ff'},
+{id: 7, label: 'LNBIG.com [lnd-13]', color: '#b0c0ff'},
+{id: 8, label: '021c97a90a411ff2b10d', color: '#b0c0ff'},
+{id: 9, label: 'BitDouble.io', color: '#b0c0ff'},
+{id: 10, label: 'LNBIG.com [lnd-26]', color: '#b0c0ff'},
+{id: 11, label: 'LNBIG.com [lnd-17]', color: '#b0c0ff'},
+{id: 12, label: 'CARNIKAVA', color: '#b0c0ff'},
+{id: 13, label: 'www.otsvs.net', color: '#b0c0ff'},
+{id: 14, label: 'Bitcoin_Rabbi', color: '#b0c0ff'},
+{id: 15, label: 'InPay', color: '#b0c0ff'},
+{id: 16, label: 'LNBIG.com [lnd-32]', color: '#b0c0ff'},
+{id: 17, label: 'XpressBTC', color: '#b0c0ff'},
+{id: 18, label: 'LNBIG.com [lnd-37]', color: '#b0c0ff'},
+{id: 19, label: 'Koosies', color: '#b0c0ff'},
+{id: 20, label: 'sqlserver.science', color: '#b0c0ff'},
+{id: 21, label: 'rompert.com🔵', color: '#b0c0ff'},
+{id: 22, label: 'ThrobbingSausage', color: '#b0c0ff'},
+{id: 23, label: 'LUXTAG_LND', color: '#b0c0ff'},
+{id: 24, label: 'Fulmo.io Free Bitcoin Payments', color: '#b0c0ff'},
+{id: 25, label: 'store.elmit.com', color: '#b0c0ff'},
+{id: 26, label: 'BitGo Alpha', color: '#b0c0ff'},
+{id: 27, label: '"Cheese"', color: '#b0c0ff'},
+{id: 28, label: 'LNBIG.com [lnd-03]', color: '#b0c0ff'},
+{id: 29, label: 'lightningslotmachine.com', color: '#b0c0ff'},
+{id: 30, label: 'node.jgs', color: '#b0c0ff'},
+{id: 31, label: 'shop.nodl.it', color: '#b0c0ff'},
+{id: 32, label: 'LNBIG.com [lnd-10]', color: '#b0c0ff'},
+{id: 33, label: 'LNBIG.com [lnd-33]', color: '#b0c0ff'},
+{id: 34, label: 'ZapTheBanks', color: '#b0c0ff'},
+{id: 35, label: 'LNBIG.com [lnd-41]', color: '#b0c0ff'},
+{id: 36, label: 'LNsomething', color: '#b0c0ff'},
+{id: 37, label: 'Leapfrog', color: '#b0c0ff'},
+{id: 38, label: 'SILENTWALK', color: '#b0c0ff'},
+{id: 39, label: 'GloBee.com', color: '#b0c0ff'},
+{id: 40, label: '0391489a933ab83094d1', color: '#b0c0ff'},
+{id: 41, label: 'bitcoin.nl', color: '#b0c0ff'},
+{id: 42, label: '028f0d181aada418e160', color: '#ffc0c0'},
+{id: 43, label: 'den_tim', color: '#b0c0ff'},
+{id: 44, label: 'ln1.satoshilabs.com', color: '#b0c0ff'},
+{id: 45, label: 'arsouille [nodl]', color: '#b0c0ff'},
+{id: 46, label: 'piece-a-pea', color: '#b0c0ff'},
+{id: 47, label: 'SAUBY_K', color: '#b0c0ff'},
+{id: 48, label: 'modularsynth.fun', color: '#b0c0ff'},
+{id: 49, label: 'BootstrapBandit [Paywall.Link]', color: '#b0c0ff'},
+{id: 50, label: 'LNBIG.com [lnd-38]', color: '#b0c0ff'},
+{id: 51, label: 'muchbitcoin.org', color: '#b0c0ff'},
+{id: 52, label: 'ScaloneNode', color: '#b0c0ff'},
+{id: 53, label: 'MidcoastDigitalCapital', color: '#b0c0ff'},
+{id: 54, label: 'Red.de.Rayos', color: '#b0c0ff'},
+{id: 55, label: 'macha', color: '#b0c0ff'},
+{id: 56, label: '⚡⚡ No Noobs ⚡⚡', color: '#b0c0ff'},
+
+    ]);
+
+    // create an array with edges
+    var edges = new vis.DataSet([
+{from: 47, to: 31, label:"-209 ms"},
+{from: 35, to: 20, label:"746 ms"},
+{from: 10, to: 38, label:"746 ms"},
+{from: 47, to: 2, label:"1536 ms"},
+{from: 2, to: 37, label:"1652 ms"},
+{from: 2, to: 5, label:"1853 ms"},
+{from: 14, to: 51, label:"756 ms"},
+{from: 14, to: 52, label:"2499 ms"},
+{from: 22, to: 6, label:"1352 ms"},
+{from: 46, to: 10, label:"198 ms"},
+{from: 18, to: 48, label:"150 ms"},
+{from: 22, to: 11, label:"1451 ms"},
+{from: 50, to: 23, label:"1253 ms"},
+{from: 50, to: 26, label:"158 ms"},
+{from: 35, to: 34, label:"953 ms"},
+{from: 47, to: 14, label:"-261 ms"},
+{from: 14, to: 43, label:"1804 ms"},
+{from: 50, to: 33, label:"200 ms"},
+{from: 10, to: 41, label:"2901 ms"},
+{from: 28, to: 30, label:"1810 ms"},
+{from: 22, to: 29, label:"1504 ms"},
+{from: 24, to: 45, label:"454 ms"},
+{from: 8, to: 28, label:"843 ms"},
+{from: 2, to: 7, label:"1251 ms"},
+{from: 18, to: 56, label:"797 ms"},
+{from: 32, to: 39, label:"203 ms"},
+{from: 47, to: 18, label:"-12 ms"},
+{from: 47, to: 22, label:"538 ms"},
+{from: 46, to: 35, label:"498 ms"},
+{from: 35, to: 13, label:"4251 ms"},
+{from: 10, to: 36, label:"2505 ms"},
+{from: 2, to: 55, label:"2152 ms"},
+{from: 8, to: 32, label:"446 ms"},
+{from: 32, to: 46, label:"153 ms"},
+{from: 16, to: 40, label:"303 ms"},
+{from: 30, to: 54, label:"695 ms"},
+{from: 42, to: 8, label:"702 ms"},
+{from: 28, to: 17, label:"2706 ms"},
+{from: 35, to: 19, label:"2151 ms"},
+{from: 28, to: 47, label:"1866 ms"},
+{from: 2, to: 3, label:"1002 ms"},
+{from: 18, to: 21, label:"1 ms"},
+{from: 22, to: 44, label:"1451 ms"},
+{from: 45, to: 27, label:"2143 ms"},
+{from: 18, to: 49, label:"-150 ms"},
+{from: 24, to: 25, label:"1446 ms"},
+{from: 46, to: 16, label:"299 ms"},
+{from: 31, to: 53, label:"4547 ms"},
+{from: 22, to: 15, label:"1397 ms"},
+{from: 10, to: 4, label:"2601 ms"},
+{from: 39, to: 50, label:"647 ms"},
+{from: 50, to: 1, label:"1049 ms"},
+{from: 32, to: 24, label:"154 ms"},
+{from: 32, to: 9, label:"1251 ms"},
+{from: 35, to: 12, label:"304 ms"},
+
+    ]);
+
+
+    // create a network
+    var container = document.getElementById('mynetwork');
+
+    // provide the data in the vis format
+    var data = {
+        nodes: nodes,
+        edges: edges
+    };
+    var options = {};
+
+    // initialize your network!
+    var network = new vis.Network(container, data, options);
+</script>
+</body>
+</html>
+	
